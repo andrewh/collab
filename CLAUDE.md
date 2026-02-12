@@ -1,0 +1,13 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## What This Repo Is
+
+A public repository of collaboration notes and instructions for AI agents (Claude Code, Codex, Copilot, Amp, etc.). It is consumed live by agents during sessions across other projects.
+
+The goal is consistent agent session setup across projects, with improvements saved and compounded over time.
+
+## Structure
+
+This is a documentation-only repository. There is no build system, no tests, and no application code.
