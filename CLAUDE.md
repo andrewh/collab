@@ -23,5 +23,6 @@ This is a documentation-only repository. There is no build system, no tests, and
   - `testing.md` — TDD discipline, mocking, and testing anti-patterns
   - `communication.md` — When to ask vs. proceed, reporting progress, pushing back
   - `creativity.md` — Getting past the default convergent mode into genuine exploration
+  - `working-with-models.md` — Matching models to tasks and adapting instructions by capability
   - `writing-claude-md.md` — How to write effective CLAUDE.md files
   - `setup.md` — How to use these guides in your projects
