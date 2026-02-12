@@ -13,11 +13,12 @@ execution.
 
 ## Quick Reference
 
-1. **Each work item must touch different files.** Shared files cause merge conflicts
-2. **Define interfaces up front.** Parallel work that integrates later needs agreed contracts
-3. **Each instance needs its own branch or worktree.** Never share a working directory
-4. **Work items must be self-contained.** Include enough context to work autonomously
-5. **Integration is its own task.** Don't assume parallel work will merge cleanly
+1. **When creating issues, think parallel by default.** Consider how the work could be split across concurrent instances
+2. **Each work item must touch different files.** Shared files cause merge conflicts
+3. **Define interfaces up front.** Parallel work that integrates later needs agreed contracts
+4. **Each instance needs its own branch or worktree.** Never share a working directory
+5. **Work items must be self-contained.** Include enough context to work autonomously
+6. **Integration is its own task.** Don't assume parallel work will merge cleanly
 
 ## The Core Constraint
 
@@ -137,6 +138,22 @@ Each parallel instance must work in isolation:
 
 After parallel work completes, merge branches sequentially and resolve
 any conflicts in the integration task.
+
+## Think Parallel When Creating Issues
+
+Whenever you're asked to create GitHub issues or break down a task into
+work items, consider parallelism as part of the decomposition. Don't
+just list what needs doing — think about which items could run
+concurrently and structure them accordingly.
+
+This means:
+- Label which issues can be worked in parallel vs. which are sequential
+- Include the contracts and file boundaries in the issue descriptions
+- Call out the integration step explicitly as its own issue
+- Note dependencies between issues so the execution order is clear
+
+Even if parallel execution isn't the immediate plan, issues structured
+this way are clearer and better scoped than a flat task list.
 
 ## When Not to Parallelise
 
