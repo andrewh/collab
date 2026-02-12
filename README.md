@@ -4,9 +4,16 @@ This repo contains all my collaboration notes and instructions for agents, such 
 
 It is designed to be a public repo and consumed live by agents I'm working with.
 
-## Setup
+## Quick Start
 
-See [claude-code/setup.md](claude-code/setup.md) for instructions on wiring these guides into your projects.
+For a fresh container or VM:
+
+```bash
+git clone https://github.com/andrewh/collab.git
+cd collab && ./dotfiles/install.sh
+```
+
+See [claude-code/setup.md](claude-code/setup.md) for wiring guides into existing projects.
 
 ## Goals
 

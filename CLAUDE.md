@@ -12,6 +12,10 @@ The goal is consistent agent session setup across projects, with improvements sa
 
 This is a documentation-only repository. There is no build system, no tests, and no application code.
 
+- `dotfiles/` — Installable Claude Code configuration for fresh environments
+  - `CLAUDE.md` — Starter global instructions referencing the remote guides
+  - `settings.json` — Hardened permissions, deny rules, and hooks
+  - `install.sh` — Installs dotfiles to `~/.claude/`
 - `claude-code/` — Operational guides for Claude Code sessions
   - `session-startup.md` — What to do in the first few minutes of a session
   - `debugging.md` — How to debug without spiralling
