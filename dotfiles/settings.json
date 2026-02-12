@@ -28,8 +28,23 @@
       "Read(~/.kube/**)",
       "Read(~/.npmrc)",
       "Read(~/.pypirc)",
-      "Read(~/.gem/credentials)"
+      "Read(~/.gem/credentials)",
+
+      "Read(./node_modules/**)",
+      "Read(./vendor/**)",
+      "Read(./.venv/**)",
+      "Read(./venv/**)",
+      "Read(./dist/**)",
+      "Read(./build/**)",
+      "Read(./.next/**)",
+      "Read(./target/**)",
+      "Read(./coverage/**)",
+      "Read(./__pycache__/**)"
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
   },
   "hooks": {
     "PreToolUse": [

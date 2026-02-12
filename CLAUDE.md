@@ -14,7 +14,9 @@ This is a documentation-only repository. There is no build system, no tests, and
 
 - `dotfiles/` — Installable Claude Code configuration for fresh environments
   - `CLAUDE.md` — Starter global instructions referencing the remote guides
-  - `settings.json` — Hardened permissions, deny rules, and hooks
+  - `settings.json` — Hardened permissions, deny rules, hooks, ignore patterns, and status line
+  - `statusline.sh` — Status bar showing model, context usage (colour-coded), cost, and lines changed
+  - `project-claude-md-template.md` — Template for new project CLAUDE.md files
   - `commands/startup.md` — `/startup`: session orientation checklist
   - `commands/review.md` — `/review`: structured self-review before committing
   - `commands/checkpoint.md` — `/checkpoint`: commit, update tracking, summarise status

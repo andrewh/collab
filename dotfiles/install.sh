@@ -28,6 +28,11 @@ else
     echo "Installed CLAUDE.md"
 fi
 
+# Status line: safe to overwrite
+cp "$SCRIPT_DIR/statusline.sh" "$CLAUDE_DIR/statusline.sh"
+chmod +x "$CLAUDE_DIR/statusline.sh"
+echo "Installed statusline.sh"
+
 # Commands: safe to overwrite (no user customisation)
 mkdir -p "$CLAUDE_DIR/commands"
 for cmd in "$SCRIPT_DIR"/commands/*.md; do
@@ -40,4 +45,5 @@ echo ""
 echo "Done. Review installed files:"
 echo "  $CLAUDE_DIR/settings.json"
 echo "  $CLAUDE_DIR/CLAUDE.md"
+echo "  $CLAUDE_DIR/statusline.sh"
 echo "  $CLAUDE_DIR/commands/"
