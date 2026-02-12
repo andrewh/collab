@@ -20,4 +20,5 @@ This is a documentation-only repository. There is no build system, no tests, and
   - `context-management.md` — Managing context window and working memory across long sessions
   - `tool-use.md` — Patterns for effective tool use in Claude Code
   - `prompting.md` — Linguistic patterns that work (and don't) with Opus 4.6
+  - `writing-claude-md.md` — How to write effective CLAUDE.md files
   - `setup.md` — How to use these guides in your projects
