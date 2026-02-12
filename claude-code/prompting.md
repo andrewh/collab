@@ -62,7 +62,7 @@ When you need a prohibition, pair it with the preferred alternative: "Don't add 
 
 #### Worked Example: Rewriting Prohibitions
 
-Before (prohibition-heavy, four rules):
+Before (prohibition-heavy, five rules):
 
 > - YOU MUST NEVER make code changes unrelated to your current task
 > - YOU MUST NEVER throw away or rewrite implementations without EXPLICIT permission
