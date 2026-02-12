@@ -100,6 +100,18 @@ commands that can do more sophisticated matching.
           {
             "type": "command",
             "command": "CMD=$(jq -r '.tool_input.command'); if echo \"$CMD\" | grep -qE 'git[[:space:]]+push.*(main|master)'; then echo 'BLOCKED: Use feature branches, not direct push to main' >&2; exit 2; fi"
+          },
+          {
+            "type": "command",
+            "command": "CMD=$(jq -r '.tool_input.command'); if echo \"$CMD\" | grep -qE 'git[[:space:]]+commit[[:space:]]+--amend'; then echo 'BLOCKED: Do not amend commits. Create a new commit instead' >&2; exit 2; fi"
+          },
+          {
+            "type": "command",
+            "command": "CMD=$(jq -r '.tool_input.command'); if echo \"$CMD\" | grep -qE '--no-verify'; then echo 'BLOCKED: Do not bypass pre-commit hooks' >&2; exit 2; fi"
+          },
+          {
+            "type": "command",
+            "command": "CMD=$(jq -r '.tool_input.command'); if echo \"$CMD\" | grep -qE 'git[[:space:]]+(checkout|restore)[[:space:]]+\\.'; then echo 'BLOCKED: Wholesale discard of working changes. Use git stash or revert specific files' >&2; exit 2; fi"
           }
         ]
       }
@@ -108,9 +120,13 @@ commands that can do more sophisticated matching.
 }
 ```
 
-The first hook catches `rm -rf` regardless of flag ordering. The second
-prevents pushing directly to main/master. Both provide clear error messages
-so the model can adjust its approach.
+What each hook catches:
+
+- **Dangerous deletions**: `rm -rf` regardless of flag ordering
+- **Direct push to main**: Forces use of feature branches
+- **Amending commits**: After a hook failure, amending modifies the *previous* commit instead of creating a new one. This silently destroys work
+- **Bypassing hooks**: `--no-verify` should never be used
+- **Discarding all changes**: `git checkout .` and `git restore .` wholesale discard working changes. Use `git stash` or revert specific files instead
 
 ## Zero Warnings Policy
 
