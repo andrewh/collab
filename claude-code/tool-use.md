@@ -104,3 +104,9 @@ Glob call is faster and keeps the result in your main context.
 
 For parallelising implementation work across multiple agents, see
 [parallel-work.md](parallel-work.md).
+
+## See also
+
+- [Common Mistakes](common-mistakes.md) — many debugging spirals originate in sloppy tool use patterns
+- [Context Management](context-management.md) — using the right tools efficiently conserves context window for reasoning
+- [Debugging](debugging.md) — disciplined tool use prevents hypothesis confusion and false starts

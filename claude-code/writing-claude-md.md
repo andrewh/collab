@@ -195,3 +195,9 @@ Auth uses JWT tokens stored in httpOnly cookies.
 
 That's about 30 lines and covers everything Claude Code needs to be productive
 immediately.
+
+## See also
+
+- [Setup](setup.md) — how to deploy and use these guides across your projects
+- [Prompting](prompting.md) — linguistic patterns that work well with Claude models; relevant for phrasing CLAUDE.md instructions effectively
+- [Context Management](context-management.md) — managing context window usage; CLAUDE.md length and organisation affect how well instructions land

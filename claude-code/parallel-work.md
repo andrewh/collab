@@ -297,3 +297,9 @@ Some tasks are inherently sequential:
 If you find yourself writing elaborate contracts and constraints to make
 a split work, the task probably shouldn't be parallelised. The overhead
 of coordination can exceed the time saved.
+
+## See also
+
+- [Context Management](context-management.md) — keeping separate context windows coherent across parallel workers
+- [Tool Use](tool-use.md) — effective patterns for launching and managing sub-agents with the Task tool
+- [Communication](communication.md) — coordinating between agents and deciding when to split work

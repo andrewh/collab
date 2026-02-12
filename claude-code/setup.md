@@ -90,3 +90,10 @@ to share the same guides without submodules.
 - Loading too many files at session start consumes context window — be selective
 - The guides are written to be useful both as startup checklists (skim the quick reference) and mid-session course corrections (read the detail)
 - If you're using these with a model other than Opus 4.6, the operational guides (debugging, pre-commit, session startup) are model-agnostic. The prompting and context management guides are Opus 4.6-specific
+
+## See also
+
+- [Session Startup](session-startup.md) — the primary orientation checklist referenced in setup
+- [Writing CLAUDE.md](writing-claude-md.md) — how to write effective CLAUDE.md files that use these guides
+- [Context Management](context-management.md) — strategies for managing context consumption when loading guides
+- [Working with Models](working-with-models.md) — how to adapt guide selection based on model capability

@@ -103,3 +103,9 @@ without your fix?
 Before declaring done, ask: "If I were reviewing this PR from someone else,
 would I approve it?" If the honest answer is "I'd have questions," address
 those questions first.
+
+## See also
+
+- [Testing](testing.md) — the test checklist is the first item in pre-commit discipline
+- [Common Mistakes](common-mistakes.md) — patterns that slip past self-review and how to catch them
+- [Debugging](debugging.md) — how to verify behaviour when something feels wrong during review

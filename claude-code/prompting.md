@@ -125,3 +125,10 @@ Based on the above, a well-structured CLAUDE.md for Opus 4.6:
 5. Repeats the most important constraints in relevant sections
 6. Keeps total length manageable — link to separate files for detail
 7. Pairs every "don't" with a "do instead"
+
+## See also
+
+- [Writing CLAUDE.md](writing-claude-md.md) — applies these prompting principles to structuring project-level CLAUDE.md files
+- [Working with Models](working-with-models.md) — how to adapt instructions across different model capabilities and strengths
+- [Communication](communication.md) — effective framing when stating expectations and pushing back
+- [Context Management](context-management.md) — maintaining instruction salience as context grows in longer sessions

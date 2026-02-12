@@ -185,3 +185,9 @@ the logs during test runs, either:
 
 Noisy test output hides real problems. When every test run produces a wall
 of expected error messages, actual unexpected errors get lost in the noise.
+
+## See also
+
+- [Debugging](debugging.md) — finding root causes and systematic hypothesis testing mirrors the TDD cycle
+- [Pre-Commit](pre-commit.md) — tests must pass before committing; self-review includes test verification
+- [Common Mistakes](common-mistakes.md) — patterns Claude Code falls into when testing, including mock overuse and brittle tests
