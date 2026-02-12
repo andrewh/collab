@@ -11,3 +11,9 @@ The goal is consistent agent session setup across projects, with improvements sa
 ## Structure
 
 This is a documentation-only repository. There is no build system, no tests, and no application code.
+
+- `claude-code/` — Operational guides for Claude Code sessions
+  - `session-startup.md` — What to do in the first few minutes of a session
+  - `debugging.md` — How to debug without spiralling
+  - `pre-commit.md` — Checklist before every commit
+  - `common-mistakes.md` — Patterns Claude Code actually falls into, with corrections
