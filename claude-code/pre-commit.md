@@ -28,6 +28,10 @@ Use plain, factual language. A bug fix is a bug fix, not a "critical
 stability improvement." Avoid inflated words: critical, crucial, essential,
 significant, comprehensive, robust, elegant. These add noise and erode trust.
 
+During troubleshooting, never use "final" in a commit message ("final fix",
+"final attempt"). There may always be more steps, and the word erodes trust
+when the next commit inevitably follows.
+
 ## Commit Scope
 
 Each commit should represent one coherent change. If you did three things, that's three commits. This makes history useful and reverts possible.
