@@ -128,6 +128,27 @@ What each hook catches:
 - **Bypassing hooks**: `--no-verify` should never be used
 - **Discarding all changes**: `git checkout .` and `git restore .` wholesale discard working changes. Use `git stash` or revert specific files instead
 
+## Verification
+
+After setting up deny rules and hooks, test them. Ask the model to read a
+blocked file (e.g. `~/.ssh/id_ed25519`) and confirm it's rejected. The
+error should say "File is in a directory that is denied by your permission
+settings" — the read is blocked before it reaches the filesystem.
+
+One gotcha: hooks match against the full command string, including string
+literals. A command like `echo 'rm -rf /tmp/test'` will trigger the
+`rm -rf` hook even though it's just printing text. This is a minor
+inconvenience when testing, but safe — false positives are better than
+false negatives for destructive operations.
+
+### Deny Rules and Allow Lists
+
+Deny rules take precedence over project-level allow rules. A project can
+have broad allows like `Bash(rm:*)` for routine file cleanup while global
+deny rules still catch dangerous variants like `rm -rf`. This means you
+can set up deny rules once globally and they'll protect every project,
+regardless of how permissive that project's allow list is.
+
 ## Zero Warnings Policy
 
 Fix every warning from every tool — linters, type checkers, compilers,

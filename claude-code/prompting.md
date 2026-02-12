@@ -60,6 +60,24 @@ Pairs of good/bad examples are particularly effective — they define boundaries
 
 When you need a prohibition, pair it with the preferred alternative: "Don't add abstractions for hypothetical future needs. Write the simplest code that solves the current problem."
 
+#### Worked Example: Rewriting Prohibitions
+
+Before (prohibition-heavy, five rules):
+
+> - YOU MUST NEVER make code changes unrelated to your current task
+> - YOU MUST NEVER throw away or rewrite implementations without EXPLICIT permission
+> - YOU MUST NEVER remove code comments unless you can PROVE they are actively false
+> - YOU MUST NEVER add comments about what used to be there or how something has changed
+> - YOU MUST NEVER refer to temporal context in comments
+
+After (positive framing, three rules, same intent):
+
+> - Stay focused on the current task. If you notice something unrelated that should be fixed, document it in your journal rather than fixing it now
+> - Preserve existing implementations. If a rewrite seems necessary, stop and ask first — explain what you'd change and why
+> - Preserve existing code comments unless you can prove they are actively false. Write evergreen comments that describe the code as it is now — avoid temporal context and historical references
+
+The rewritten version is shorter, tells the model what to do (not just what to avoid), and is easier to follow because each rule has a clear action.
+
 ### Repetition of Critical Rules
 
 Stating a rule once in a long instruction file is not enough. If a rule is critical, it should appear in multiple relevant contexts — in the high-level principles, and again in the specific section where it applies. Opus 4.6 treats repeated rules as higher priority, and long instruction files suffer from the same middle-section dip as any long text.
