@@ -17,3 +17,5 @@ This is a documentation-only repository. There is no build system, no tests, and
   - `debugging.md` — How to debug without spiralling
   - `pre-commit.md` — Checklist before every commit
   - `common-mistakes.md` — Patterns Claude Code actually falls into, with corrections
+  - `context-management.md` — Managing context window and working memory across long sessions
+  - `tool-use.md` — Patterns for effective tool use in Claude Code

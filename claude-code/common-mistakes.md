@@ -61,3 +61,27 @@ Writing new code from scratch when the codebase already has a pattern for exactl
 After many rounds of changes, forgetting what the original goal was, what's been tried, or what state the code is in. This leads to circular debugging and inconsistent changes.
 
 **Correction**: Use the todo list and journal. Write down what you're doing, what you've tried, and what's left. Re-read your notes before each major step. If things feel confused, take a moment to summarise the current state.
+
+## Pattern Matching Instead of Reasoning
+
+Opus 4.6 is trained on a lot of code. Sometimes it recognises a pattern and reaches for a "standard" solution without actually reasoning about whether that solution fits the specific problem. This shows up as plausible-looking code that's subtly wrong for the situation — correct in general but incorrect for the specific types, edge cases, or constraints at hand.
+
+**Correction**: After writing code, ask yourself: "did I reason about this specific problem, or did I reach for a familiar pattern?" If you can't explain why each line is correct for *this* case, re-examine it.
+
+## Sounding Confident When Uncertain
+
+Opus 4.6 produces fluent, confident-sounding text by default. This means uncertainty doesn't naturally surface in the output — wrong answers sound the same as right ones. This is dangerous when making architectural decisions or diagnosing bugs.
+
+**Correction**: Actively calibrate your confidence. If you're less than ~80% sure about something, say so explicitly. "I believe X but I'm not certain" is far more useful than stating X as fact. When debugging, be especially careful — a confident wrong diagnosis wastes more time than an honest "I don't know yet."
+
+## Instruction Drift
+
+Over long conversations, Opus 4.6 gradually drifts from instructions given early in the session. Project rules, style guidelines, and explicit constraints get softer in your reasoning as the conversation grows. This isn't deliberate — it's a natural consequence of context window dynamics.
+
+**Correction**: On long sessions, periodically re-read the project's CLAUDE.md and any other instruction files. Before committing, review the project rules that apply to your changes. If someone has given you specific constraints for the current task, re-read them before declaring the task complete.
+
+## Generating Plausible but Unverified Information
+
+When asked about APIs, library behaviour, or system details, Opus 4.6 sometimes generates answers that are plausible and internally consistent but factually wrong. This is especially risky with version-specific behaviour, obscure options, or recently-changed APIs.
+
+**Correction**: If you're making claims about how an external system works, verify them. Read the actual source code, check documentation, or run a test. Don't cite API behaviour from memory when you can check the actual API.
