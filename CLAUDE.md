@@ -15,10 +15,12 @@ This is a documentation-only repository. There is no build system, no tests, and
 - `claude-code/` — Operational guides for Claude Code sessions
   - `session-startup.md` — What to do in the first few minutes of a session
   - `debugging.md` — How to debug without spiralling
-  - `pre-commit.md` — Checklist before every commit
+  - `pre-commit.md` — Self-review and checklist before every commit
   - `common-mistakes.md` — Patterns Claude Code actually falls into, with corrections
   - `context-management.md` — Managing context window and working memory across long sessions
   - `tool-use.md` — Patterns for effective tool use in Claude Code
   - `prompting.md` — Linguistic patterns that work (and don't) with Opus 4.6
+  - `testing.md` — TDD discipline, mocking, and testing anti-patterns
+  - `communication.md` — When to ask vs. proceed, reporting progress, pushing back
   - `writing-claude-md.md` — How to write effective CLAUDE.md files
   - `setup.md` — How to use these guides in your projects
