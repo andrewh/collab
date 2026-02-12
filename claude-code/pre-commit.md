@@ -63,7 +63,14 @@ against the original ask.
 
 ### Read Your Own Code Critically
 
-Read every line of your diff and ask:
+Review in this order — from most expensive to fix to least:
+
+1. **Architecture**: Is the change in the right place? Does it respect the existing boundaries and patterns?
+2. **Code quality**: Is it clear, simple, and well-named? Any duplication?
+3. **Tests**: Do the tests cover the change? Do they test behaviour, not implementation?
+4. **Performance**: Any obvious inefficiencies? (Only after the above are solid)
+
+Then read every line of your diff and ask:
 
 - Would this make sense to someone seeing it for the first time?
 - Is there a simpler way to achieve the same thing?

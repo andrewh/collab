@@ -47,6 +47,15 @@ When you're not sure whether to ask or proceed, lean toward asking if the
 action is hard to reverse, and lean toward proceeding if it's easy to undo.
 Creating a file you can delete is low-risk. Refactoring a module is high-risk.
 
+### When You Proceed, State Your Assumption
+
+If you decide to proceed without asking, make the assumption visible:
+"I'm assuming this should return an error rather than silently succeed —
+I'll handle it that way unless you say otherwise."
+
+This lets the human correct you cheaply. A silent assumption is invisible
+until it causes a problem; a stated assumption is a lightweight checkpoint.
+
 ## How to Ask Good Questions
 
 ### Be Specific

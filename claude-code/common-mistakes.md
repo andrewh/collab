@@ -56,6 +56,12 @@ Writing new code from scratch when the codebase already has a pattern for exactl
 
 **Correction**: Before writing new code, search for similar existing code. Match the patterns already established in the project.
 
+## Deprecating Instead of Replacing
+
+When replacing an implementation, leaving the old one around "just in case" — behind a flag, with a compatibility shim, or simply commented out. This creates dual code paths that both need maintaining, confuse anyone reading the code, and rarely get cleaned up.
+
+**Correction**: When new code replaces old code, remove the old code entirely. No backward-compatible shims, no dual config formats, no migration paths unless explicitly asked for. If you're uncertain whether the old code is still needed, ask — don't hedge by keeping both.
+
 ## Losing Track During Long Sessions
 
 After many rounds of changes, forgetting what the original goal was, what's been tried, or what state the code is in. This leads to circular debugging and inconsistent changes.
