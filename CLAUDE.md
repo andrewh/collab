@@ -15,7 +15,13 @@ This is a documentation-only repository. There is no build system, no tests, and
 - `dotfiles/` — Installable Claude Code configuration for fresh environments
   - `CLAUDE.md` — Starter global instructions referencing the remote guides
   - `settings.json` — Hardened permissions, deny rules, and hooks
-  - `commands/startup.md` — `/startup` command: session orientation checklist
+  - `commands/startup.md` — `/startup`: session orientation checklist
+  - `commands/review.md` — `/review`: structured self-review before committing
+  - `commands/checkpoint.md` — `/checkpoint`: commit, update tracking, summarise status
+  - `commands/debug.md` — `/debug`: reset debugging approach when stuck
+  - `commands/context-check.md` — `/context-check`: fight instruction drift on long sessions
+  - `commands/decompose.md` — `/decompose`: break tasks into parallel work items
+  - `commands/pr-comments.md` — `/pr-comments`: review and address PR comments
   - `install.sh` — Installs dotfiles to `~/.claude/`
 - `claude-code/` — Operational guides for Claude Code sessions
   - `session-startup.md` — What to do in the first few minutes of a session
