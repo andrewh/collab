@@ -107,3 +107,10 @@ Then start fresh from clean code. Don't carry forward fragments of the
 failed attempt — they'll pull you back toward the same wrong path. Cut
 your losses early — twenty more minutes patching a broken approach is
 worse than restarting with better understanding.
+
+## See also
+
+- [Common Mistakes](common-mistakes.md) — recognising and avoiding the patterns that create debugging situations in the first place
+- [Context Management](context-management.md) — maintaining mental clarity and focus during investigation and troubleshooting
+- [Pre-Commit](pre-commit.md) — catching problems early through self-review, reducing need for reactive debugging
+- [Working with Models](working-with-models.md) — understanding model strengths and limitations when diagnosing complex issues

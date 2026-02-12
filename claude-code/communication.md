@@ -169,3 +169,10 @@ If they're writing terse messages, they want terse responses. If they're
 writing detailed explanations, they're inviting detailed discussion. Don't
 write paragraphs in response to "yep" and don't give one-word answers to
 detailed questions.
+
+## See also
+
+- [Common Mistakes](common-mistakes.md) — communication failures are avoidable patterns
+- [Debugging](debugging.md) — structured approach for getting unstuck and reporting what's wrong
+- [Session Startup](session-startup.md) — setting communication patterns in the first few minutes
+- [Pre-Commit](pre-commit.md) — self-review discipline before reporting changes are ready

@@ -76,3 +76,10 @@ But don't parallelise dependent operations — if you need one result to inform 
 Sometimes the most productive thing is to acknowledge that a session has become too long and cluttered. If you've been working for a long time and things are getting confused, say so. A fresh session with a clear brief is often faster than continuing to fight context degradation.
 
 Before ending, make sure your state is captured: commit work in progress, update your todo list, write notes about where you are and what's next.
+
+## See also
+
+- [Session Startup](session-startup.md) — establishing clear orientation at the beginning of a session
+- [Debugging](debugging.md) — recognising when you're lost and resetting your approach
+- [Tool Use](tool-use.md) — patterns for using tools effectively to offload memory
+- [Parallel Work](parallel-work.md) — leveraging simultaneous tool calls to reduce context waste

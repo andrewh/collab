@@ -161,3 +161,9 @@ What varies across families:
 - **Tool use**: Different agents have different tool sets and use them differently
 - **Failure modes**: Each model family has characteristic mistakes. The common-mistakes.md guide is Claude-specific
 - **Creativity techniques**: The specific techniques in creativity.md may work differently with other models, though the general principles (delay convergence, separate generation from evaluation) are universal
+
+## See also
+
+- [Prompting](prompting.md) — linguistic patterns that work specifically with Opus 4.6
+- [Common Mistakes](common-mistakes.md) — characteristic failure modes of Claude models across capability levels
+- [Context Management](context-management.md) — how to manage context degradation across long sessions, which affects all models differently

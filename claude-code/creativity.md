@@ -133,3 +133,9 @@ well-known solutions and creativity would be wasted effort.
 - **Time pressure**: "Just give me something quick" produces the most standard answer. If you want creativity, signal that exploration time is acceptable
 - **Immediate evaluation**: Critiquing each idea as it appears shuts down divergent thinking. Let ideas accumulate before filtering
 - **Asking for "the best"**: This triggers convergence. Ask for options first, then select
+
+## See also
+
+- [Prompting](prompting.md) — linguistic patterns that work with Opus 4.6; creativity is fundamentally a prompting problem
+- [Working with Models](working-with-models.md) — understanding model capabilities helps calibrate when creative exploration is worth the effort
+- [Communication](communication.md) — deciding when to ask for creative input vs. just execute is a key communication decision

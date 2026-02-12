@@ -91,3 +91,10 @@ Over long conversations, Opus 4.6 gradually drifts from instructions given early
 When asked about APIs, library behaviour, or system details, Opus 4.6 sometimes generates answers that are plausible and internally consistent but factually wrong. This is especially risky with version-specific behaviour, obscure options, or recently-changed APIs.
 
 **Correction**: If you're making claims about how an external system works, verify them. Read the actual source code, check documentation, or run a test. Don't cite API behaviour from memory when you can check the actual API.
+
+## See also
+
+- [Debugging](debugging.md) — the error-reading and systematic troubleshooting process referenced here
+- [Testing](testing.md) — detailed mocking guidance and testing discipline
+- [Communication](communication.md) — how to surface assumptions and ask for clarification
+- [Context Management](context-management.md) — staying on track during long sessions and re-reading instructions

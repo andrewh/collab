@@ -46,3 +46,9 @@ Before writing any code:
 2. Check whether there are existing tests, patterns, or utilities relevant to your task
 3. Think about the smallest change that achieves the goal
 4. If the task is non-trivial, think through your approach before writing code. For significant work, propose a plan and get agreement before implementing
+
+## See also
+
+- [Common Mistakes](common-mistakes.md) — patterns to avoid from the start
+- [Tool Use](tool-use.md) — effective patterns for navigating and understanding projects
+- [Pre-Commit](pre-commit.md) — checklist and self-review before every commit

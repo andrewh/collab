@@ -189,3 +189,9 @@ Before adding a dependency, ask:
 For security-sensitive projects, pin exact versions and verify hashes.
 Run dependency audit tools (`pip-audit`, `pnpm audit`, `cargo deny`)
 before deploying.
+
+## See also
+
+- [Pre-Commit](pre-commit.md) — hooks enforce the rules described here before commits land
+- [Common Mistakes](common-mistakes.md) — documents the destructive patterns these deny rules and hooks prevent
+- [Setup](setup.md) — instructions for installing the hardened settings globally or per-project
