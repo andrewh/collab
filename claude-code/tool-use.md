@@ -83,9 +83,24 @@ Use git operations liberally:
 
 ## Subagents
 
-Use subagents for:
-- **Explore**: Broad codebase exploration that would take many sequential searches
-- **Plan**: Designing implementation approaches for significant work
-- **Bash**: Complex multi-step shell operations
+The Task tool launches sub-agents — workers that run within your session
+with their own context window. They do work and report results back.
 
-Don't use subagents for simple, directed searches — a single Grep or Glob call is faster and keeps the result in your main context.
+| Type | Use for |
+|---|---|
+| **Explore** | Broad codebase search and understanding |
+| **Plan** | Designing implementation approaches |
+| **Bash** | Shell operations (builds, system commands) |
+| **go-expert-developer** | Go-specific implementation and review |
+| **paranoid-pr-reviewer** | Thorough code review after writing code |
+| **general-purpose** | Multi-step tasks that don't fit other types |
+
+Launch multiple sub-agents in the same message to run them in parallel.
+This is valuable for parallel research, isolating verbose output from
+your main context, and investigating competing hypotheses.
+
+Don't use sub-agents for simple, directed searches — a single Grep or
+Glob call is faster and keeps the result in your main context.
+
+For parallelising implementation work across multiple agents, see
+[parallel-work.md](parallel-work.md).
