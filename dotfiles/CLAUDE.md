@@ -37,6 +37,8 @@ Follow the session startup checklist before beginning work.
 
 ## Writing Code
 
+- When decomposing non-trivial tasks, proactively suggest which parts could run
+  in parallel (sub-agents, agent teams, or worktrees). See parallel-work.md
 - YOU MUST make the SMALLEST reasonable changes to achieve the desired outcome
 - Simple, clean, maintainable solutions over clever or complex ones.
   Readability is a PRIMARY CONCERN
