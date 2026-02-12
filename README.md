@@ -4,6 +4,10 @@ This repo contains all my collaboration notes and instructions for agents, such 
 
 It is designed to be a public repo and consumed live by agents I'm working with.
 
+## Setup
+
+See [claude-code/setup.md](claude-code/setup.md) for instructions on wiring these guides into your projects.
+
 ## Goals
 
 - agent session setup is consistent across projects and agents
