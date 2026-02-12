@@ -22,5 +22,6 @@ This is a documentation-only repository. There is no build system, no tests, and
   - `prompting.md` — Linguistic patterns that work (and don't) with Opus 4.6
   - `testing.md` — TDD discipline, mocking, and testing anti-patterns
   - `communication.md` — When to ask vs. proceed, reporting progress, pushing back
+  - `creativity.md` — Getting past the default convergent mode into genuine exploration
   - `writing-claude-md.md` — How to write effective CLAUDE.md files
   - `setup.md` — How to use these guides in your projects
