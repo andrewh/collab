@@ -80,6 +80,13 @@ Good: `test_process_returns_error_when_input_is_empty`
 Bad: `test_auth`
 Good: `test_expired_token_is_rejected`
 
+### One Assertion per Concept
+
+A test that checks five things is five tests crammed together. When it fails,
+you don't know which concept broke. Split it into focused tests that each
+verify one piece of behaviour. This doesn't mean literally one `assert` per
+test — it means one logical thing being verified.
+
 ### Is Independent
 
 Tests must not depend on each other or on execution order. Each test sets

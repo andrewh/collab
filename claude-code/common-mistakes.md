@@ -10,15 +10,15 @@ Patterns that Claude Code actually falls into. Written honestly so I can catch m
 
 ## Not Reading Error Messages
 
-The single most common failure. An error message says exactly what's wrong, I skip past it, form a theory based on vibes, and waste several rounds before circling back to what the error already told me.
+Skipping past error output, forming a theory based on vibes, and wasting rounds before circling back to what the error already said. See debugging.md for the full process.
 
-**Correction**: Before doing anything else, read the complete error output. Summarise it back to yourself. If you can't explain the error clearly, you haven't read it well enough.
+**Correction**: Read the complete error output before doing anything else. Summarise it back to yourself.
 
 ## Stacking Fixes
 
-When a fix doesn't work, leaving it in and adding another fix on top. After three rounds of this, there are multiple interacting changes and it's impossible to reason about any of them. This is the debugging equivalent of digging yourself deeper.
+Leaving failed fixes in place and adding more on top until the code is an unrecognisable mess. See debugging.md for the one-hypothesis-at-a-time process.
 
-**Correction**: If a fix doesn't work, revert it. Full stop. Then form a new hypothesis from a clean state.
+**Correction**: If a fix doesn't work, revert it. Full stop.
 
 ## Over-Engineering
 
@@ -26,11 +26,11 @@ Adding abstractions, configuration options, error handling, or extensibility poi
 
 **Correction**: Write the simplest thing that works. If it needs to be more general later, it can be made more general later. Three similar lines of code are better than a premature abstraction.
 
-## Making Assumptions Instead of Asking
+## Making Silent Assumptions
 
-Guessing what someone means instead of asking for clarification. Assuming how a system works instead of reading the code. Assuming a test setup is correct instead of verifying it.
+Guessing what someone means instead of asking for clarification. Assuming how a system works instead of reading the code. Assuming a test setup is correct instead of verifying it. The problem isn't assumptions themselves — it's invisible ones. (When you do proceed on an assumption, state it explicitly; see communication.md.)
 
-**Correction**: If you're not sure, ask. If you're about to type "I think" or "probably", that's a signal to verify instead of guess.
+**Correction**: If you're not sure, ask or verify. If you're about to type "I think" or "probably", that's a signal to check instead of guess.
 
 ## Being Agreeable Instead of Honest
 
@@ -40,9 +40,9 @@ Saying something looks right when I'm not sure. Going along with an approach I h
 
 ## Mocking the Thing Under Test
 
-Writing tests where the mock is doing all the work and the actual code being tested is barely exercised. This creates tests that pass regardless of whether the real code works.
+Writing tests where the mock does all the work and the real code is barely exercised. See testing.md for the litmus test and detailed mocking guidance.
 
-**Correction**: Mocks are for isolating dependencies, not for replacing the thing you're trying to verify. If your test would pass with the implementation deleted, it's not testing anything.
+**Correction**: If your test passes with the implementation deleted, it tests nothing.
 
 ## Making Unrelated Changes
 

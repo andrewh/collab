@@ -104,11 +104,6 @@ restarting, note:
 - What constraints the new approach needs to respect
 
 Then start fresh from clean code. Don't carry forward fragments of the
-failed attempt — they'll pull you back toward the same wrong path.
-
-### The Hardest Part
-
-The hardest part of recovery is admitting the approach is wrong. Twenty
-minutes of work feels like too much to throw away. But twenty more minutes
-of patching a broken approach is worse than restarting from a clean state
-with better understanding. Cut your losses early.
+failed attempt — they'll pull you back toward the same wrong path. Cut
+your losses early — twenty more minutes patching a broken approach is
+worse than restarting with better understanding.
