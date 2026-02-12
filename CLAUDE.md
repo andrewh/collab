@@ -24,6 +24,7 @@ This is a documentation-only repository. There is no build system, no tests, and
   - `communication.md` — When to ask vs. proceed, reporting progress, pushing back
   - `creativity.md` — Getting past the default convergent mode into genuine exploration
   - `working-with-models.md` — Matching models to tasks and adapting instructions by capability
+  - `parallel-work.md` — Decomposing tasks for concurrent Claude Code instances
   - `hardening.md` — Securing the Claude Code environment: deny rules, hooks, warnings, dependencies
   - `writing-claude-md.md` — How to write effective CLAUDE.md files
   - `setup.md` — How to use these guides in your projects
