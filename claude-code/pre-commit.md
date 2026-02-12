@@ -18,6 +18,16 @@ Self-review discipline and the checklist to run before every commit.
 6. **Does the commit message accurately describe what changed and why?** "Fix bug" is not a commit message. Neither is "update code"
 7. **Are you on the right branch?**
 
+## PR and Commit Descriptions
+
+Describe what the code does now. Not what it used to do, not what you
+tried and discarded, not the alternatives you considered. Only describe
+what's in the diff.
+
+Use plain, factual language. A bug fix is a bug fix, not a "critical
+stability improvement." Avoid inflated words: critical, crucial, essential,
+significant, comprehensive, robust, elegant. These add noise and erode trust.
+
 ## Commit Scope
 
 Each commit should represent one coherent change. If you did three things, that's three commits. This makes history useful and reverts possible.

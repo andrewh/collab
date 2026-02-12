@@ -93,6 +93,18 @@ failure message. Is it failing because the behaviour is missing (correct) or
 because of a setup error, import issue, or wrong assertion (incorrect)? A
 test that fails for the wrong reason will pass for the wrong reason too.
 
+### Proves It Catches Failures
+
+After writing a test, break the code it covers and confirm the test fails.
+This verifies the test is actually sensitive to the bug it's meant to catch.
+A test that stays green when the code is broken is worse than no test — it
+provides false confidence.
+
+For systematic verification, mutation testing tools (`cargo-mutants` for Rust,
+`mutmut` for Python) automatically introduce small changes to your code and
+check that tests catch them. If a mutation survives, you have a gap in your
+test coverage.
+
 ## Mocking
 
 Mocks are the most abused tool in testing. Used correctly, they isolate the
