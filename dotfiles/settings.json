@@ -1,5 +1,6 @@
 {
   "$schema": "https://json-schema.store.org/claude-code-settings.json",
+  "alwaysThinkingEnabled": true,
   "permissions": {
     "deny": [
       "Bash(rm -rf *)",

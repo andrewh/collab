@@ -15,6 +15,7 @@ This is a documentation-only repository. There is no build system, no tests, and
 - `dotfiles/` — Installable Claude Code configuration for fresh environments
   - `CLAUDE.md` — Starter global instructions referencing the remote guides
   - `settings.json` — Hardened permissions, deny rules, and hooks
+  - `commands/startup.md` — `/startup` command: session orientation checklist
   - `install.sh` — Installs dotfiles to `~/.claude/`
 - `claude-code/` — Operational guides for Claude Code sessions
   - `session-startup.md` — What to do in the first few minutes of a session

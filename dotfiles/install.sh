@@ -28,7 +28,16 @@ else
     echo "Installed CLAUDE.md"
 fi
 
+# Commands: safe to overwrite (no user customisation)
+mkdir -p "$CLAUDE_DIR/commands"
+for cmd in "$SCRIPT_DIR"/commands/*.md; do
+    [ -f "$cmd" ] || continue
+    cp "$cmd" "$CLAUDE_DIR/commands/"
+    echo "Installed command: $(basename "$cmd" .md)"
+done
+
 echo ""
 echo "Done. Review installed files:"
 echo "  $CLAUDE_DIR/settings.json"
 echo "  $CLAUDE_DIR/CLAUDE.md"
+echo "  $CLAUDE_DIR/commands/"
