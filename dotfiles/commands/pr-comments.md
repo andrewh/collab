@@ -3,7 +3,7 @@
 
 ## 1. Fetch the PR and comments
 
-Run `gh pr view $PR` to get the PR description and status. Run `gh api repos/{owner}/{repo}/pulls/$PR/comments` to get all review comments. Also check `gh api repos/{owner}/{repo}/pulls/$PR/reviews` for review-level comments.
+Use `gh api repos/{owner}/{repo}/pulls/$PR` to get the PR description and status. Use `gh api repos/{owner}/{repo}/pulls/$PR/comments` to get all review comments. Also check `gh api repos/{owner}/{repo}/pulls/$PR/reviews` for review-level comments. Avoid `gh pr view` as it hits a GraphQL Projects Classic deprecation error.
 
 ## 2. Summarise comments
 
