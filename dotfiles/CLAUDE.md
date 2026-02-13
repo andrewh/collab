@@ -63,7 +63,7 @@ Follow the session startup checklist before beginning work.
 
 ## GitHub Comments
 
-- NEVER use `#N` in PR or issue comments — GitHub auto-links `#1`, `#2` etc.
+- NEVER use numbered references like `#1` and `#2` in PR or issue comments — GitHub auto-links them
   to issue numbers. Use parenthesised numbers `(1)`, `(2)` or plain numbered
   lists instead
 
