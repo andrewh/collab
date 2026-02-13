@@ -61,6 +61,12 @@ Follow the session startup checklist before beginning work.
 - Good: `Tool`, `RemoteTool`, `Registry`, `execute()`
 - Bad: `AbstractToolInterface`, `MCPToolWrapper`, `ToolRegistryManager`
 
+## GitHub Comments
+
+- NEVER use numbered references like `#1` and `#2` in PR or issue comments — GitHub auto-links them
+  to issue numbers. Use parenthesised numbers `(1)`, `(2)` or plain numbered
+  lists instead
+
 ## Version Control
 
 - If no git repo exists, STOP and ask permission to initialise one
