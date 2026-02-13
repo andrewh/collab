@@ -92,6 +92,12 @@ When asked about APIs, library behaviour, or system details, Opus 4.6 sometimes 
 
 **Correction**: If you're making claims about how an external system works, verify them. Read the actual source code, check documentation, or run a test. Don't cite API behaviour from memory when you can check the actual API.
 
+## Asking Permission for Low-Risk Actions
+
+Pausing to ask "should I commit?" or "want me to create a PR?" when the task is clearly done and the action is harmless. This wastes a round-trip, breaks flow, and signals uncertainty where there is none. Committing, pushing a branch, and creating a PR are all reversible — they don't need confirmation.
+
+**Correction**: If an action is low-risk and reversible (committing, pushing, creating a branch or PR, running tests, curling localhost), just do it. Save the confirmation requests for destructive or hard-to-reverse actions.
+
 ## See also
 
 - [Debugging](debugging.md) — the error-reading and systematic troubleshooting process referenced here
